@@ -1,0 +1,239 @@
+{
+    "text":{
+        "Home": "الرئيسية",
+    "About": "من نحن",
+    "Contact": "اتصل بنا",
+    "AdminLayout": "ادمن",
+    "Register": "تسجيل",
+    "Login": "تسجيل الدخول",
+    "Logout": "تسجيل الخروج",
+    "adddoctor":"اضافه طبيب"
+    },
+    "header": {
+    "betterLife": "حياة أفضل",
+    "and": "و",
+    "betterHealth": "صحة أفضل",
+    "togetherFor": "معا من أجل",
+    "platformDescription": "منصتنا الطبية هي منصة موثوقة للاستشارات الطبية عبر الإنترنت وخارجها"
+  },
+  "ask": {
+    "slogan":".شعارنا هو صحة أفضل، حياة أفضل",
+    "haveQuestion": "هل لديك سؤال طبي؟",
+    "sendToDoctor": ".أرسل سؤالك إلى طبيب مختص",
+    "yourQuestion": "سؤالك؟",
+    "imageAlt": "سؤال طبي"
+  },
+  "services": {
+    "teethCleaning": "تنظيف الأسنان",
+    "offers": "عرض متاح",
+    "readMore": "اقرأ المزيد"
+  },
+  "currency": {
+    "EGP": "جنيه مصري"
+  },
+  "book": {
+    "title": ".احجز طبيبًا مؤهلًا ومتخصصًا",
+    "teeth": "الأسنان",
+    "child": "الأطفال",
+    "skin": "الجلدية"
+  },
+  "features": {
+    "healthcareNeedsTitle": "جميع احتياجاتك الصحية",
+    "healthcareNeedsDescription": "ابحث واحجز زيارة للعيادة أو زيارة منزلية أو استشارة عن بُعد. اطلب أدويتك واحجز خدمة أو عملية جراحية.",
+    "verifiedReviewsTitle": "مراجعات المرضى الموثوقة",
+    "verifiedReviewsDescription": "تقييمات الأطباء تأتي من مرضى حجزوا وزاروا الطبيب عبر منصتنا.",
+    "bookingConfirmedTitle": "تم تأكيد حجزك",
+    "bookingConfirmedDescription": "يتم تأكيد حجزك تلقائيًا حيث يقوم الطبيب بتحديد ساعات عمله ويتم إخطاره بتفاصيل الحجز.",
+    "bookFreeTitle": "احجز مجانًا وادفع في العيادة",
+    "bookFreeDescription": "رسوم الاستشارة المعروضة على منصتنا هي رسوم الطبيب الفعلية دون أي رسوم إضافية."
+  },
+  "text_login": {
+        "Login": "تسجيل الدخول"
+    },
+    "errors": {
+        "loginFailed": "البريد الإلكتروني أو كلمة المرور غير صحيحة"
+    },
+    "validation": {
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailInvalid": "البريد الإلكتروني غير صالح",
+        "passwordRequired": "كلمة المرور مطلوبة"
+    },
+    "placeholders": {
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور"
+    },
+    "buttons": {
+        "login": "تسجيل الدخول",
+        "forgetPassword": "نسيت كلمة المرور"
+    },
+    "re_text": {
+        "register": "إنشاء حساب",
+        "fullName": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "phoneNumber": "رقم الهاتف",
+        "dateOfBirth": "تاريخ الميلاد",
+        "gender": "الجنس",
+        "password": "كلمة المرور",
+        "confirmPassword": "تأكيد كلمة المرور",
+        "male": "ذكر",
+        "female": "أنثى"
+    },
+    "re_errors": {
+        "emailInUse": "البريد الإلكتروني مستخدم بالفعل",
+        "passwordMismatch": "كلمتا المرور غير متطابقتين",
+        "invalidPhone": "رقم الهاتف غير صالح",
+        "invalidDate": "تاريخ الميلاد غير صالح",
+        "requiredField": "هذا الحقل مطلوب"
+    },
+    "re_validation": {
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailInvalid": "البريد الإلكتروني غير صالح",
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+        "phoneRequired": "رقم الهاتف مطلوب",
+        "dateOfBirthRequired": "تاريخ الميلاد مطلوب",
+        "genderRequired": "الجنس مطلوب",
+        "specializationId":"معرف التخصص"
+        
+    },
+    "re_placeholders": {
+        "fullName": "أدخل اسمك الكامل",
+        "email": "أدخل بريدك الإلكتروني",
+        "phoneNumber": "أدخل رقم هاتفك",
+        "dateOfBirth": "اختر تاريخ ميلادك",
+        "password": "أدخل كلمة المرور",
+        "confirmPassword": "أعد إدخال كلمة المرور",
+        "specializationId":"معرف التخصص"
+
+    },
+    "re_buttons": {
+        "register": "إنشاء حساب",
+        "alreadyHaveAccount": "لديك حساب بالفعل؟ تسجيل الدخول"
+    },
+
+    "Genaral":  {
+        "title": "لوحة التحكم - النظام الطبي",
+        "DoctorName": "اسم الدكتور",
+        "Specialty":"التخصص",
+        "HospitalClinic":"المستشفى/العيادة",
+        "PhoneNumber": "رقم الهاتف",
+        "TotalPatients":"إجمالي المرضى",
+        "TotalDoctors":"إجمالي الأطباء"
+      },
+      "sidbar":{
+        "genaral":"عام",
+        "users":"مستخدميين",
+        "doctors":"اطباء",
+        "chats":"محادثات"
+      },
+
+      "Doctros": {
+        "adddoctor": "اضافه طبيب",
+        "addcity": "اضافه منطقه",
+        "addFailed": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailInvalid": "البريد الإلكتروني غير صالح",
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "fullName": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "gender": "النوع",
+          "male": "ذكر",
+        "female": "أنثى",
+        "phoneNumber": "أدخل رقم هاتفك",
+        "specializationId":"رقم التخصص",
+        "password": "كلمة المرور",
+        "confirmPassword":"تاكيد كلمة المرور",
+        "forgetPassword": "نسيت كلمة المرور",
+        "city":"المدينه",
+        "region":"منطقة",
+        "Doctor's Name":"اسم الدكتور",
+        "Phone Number":"رقم الهاتف",
+        "Action":"حدث",
+        "msg1":"غير مصرح به: الرمز مفقود",
+        "msg2":"فشل في جلب الأطباء",
+        "msg3":"تم حذف الطبيب بنجاح!",
+        "msg4":"فشل في إزالة الطبيب",
+        "Remove":" حزف",
+        "Userlist":"قائمه الاطباء"
+
+
+
+    },
+    "Users":{
+      "DoctorName":"اسم المستخدم",
+      "Phone Number":"رقم الهاتف",
+      "Action":"حدث",
+      "role":"الصلاحيه",
+      "msg1":"غير مصرح به: الرمز مفقود",
+      "msg2":"فشل في جلب الأطباء",
+      "msg3":"تم حذف الطبيب بنجاح!",
+      "msg4":"فشل في إزالة الطبيب",
+      "city":"المدينه",
+        "region":"منطقة",
+        "gender": "النوع",
+        "male": "ذكر",
+      "female": "أنثى",
+      "Remove":" حزف",
+        "Userlist":"قائمة المستخدمين"
+
+    },
+       
+        "ProfileDoctor": {
+          "title": "تحديث الملف الشخصي للطبيب",
+          "fullName": "الاسم الكامل",
+          "email": "البريد الإلكتروني",
+          "phoneNumber": "رقم الهاتف",
+          "dateOfBirth": "تاريخ الميلاد",
+          "gender": "الجنس",
+          "selectGender": "اختر جنسك",
+          "male": "ذكر",
+          "female": "أنثى",
+          "city": "المدينة",
+          "region": "المنطقة",
+          "summary": "نبذة مختصرة",
+          "specialization": "التخصص",
+          "profilePicture": "صورة الملف الشخصي",
+          "save": "حفظ",
+          "cancel": "إلغاء",
+          "changePassword": "تغيير كلمة المرور",
+          "uploadImage": "تحميل صورة",
+          "ProfileDoctor":"حساب الطبيب",
+          "ChangeImage":"تغيير الصوره",
+          "UpdateDoctor":" بيانات الطبيب",
+          "SelectCity":"اختيار المدينه",
+          "Cancel":"الغاء",
+          "Save":"حفظ",
+          "Changepassword":"تغيير كلمه المرور",
+          "NewPassword":"كلمه مرور جديده",
+          "ConfirmNewPassword":"تاكيد كلمه المرور الجديده",
+          "SelectGender":"اختيار النوع",
+          "Myclinic":"اضافه عيادة",
+          "ShowMyclinic":"عيادتي",
+
+          "Myappointments":"مواعيدي"
+        },
+        "validation1": {
+          "required": "هذا الحقل مطلوب",
+          "invalidEmail": "البريد الإلكتروني غير صالح",
+          "invalidPhone": "رقم الهاتف غير صالح",
+          "invalidDate": "تاريخ الميلاد غير صالح"
+        },
+        "messages": {
+          "profileUpdated": "تم تحديث الملف الشخصي بنجاح!",
+          "profileUpdateFailed": "فشل في تحديث الملف الشخصي"
+        },
+        "addcity":{
+          "required":"هذا الحقل مطلوب",
+          "cityAdded":"اضافه مدينه",
+          "cityNamePlaceholder":"ادخال اسم المدينه",
+          "rigonyNamePlaceholder":"ادخل اسم المنطقه"
+
+        },
+        "Myclinic":{
+          "title":"اضافه العياده",
+          "ClinicName":"اسم العياده",
+          "SelectRegion":"اختيار المنطقه",
+          "SelectCity":"اختيار المدينه",
+          "phoneNumber":"رقم الهاتف"
+      }
+}

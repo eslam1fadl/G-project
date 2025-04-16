@@ -1,0 +1,230 @@
+{
+    "text": {
+        "Home": "Home",
+        "About": "About",
+        "Contact": "Contact",
+        "AdminLayout": "Admin",
+        "Register": "Register",
+        "Login": "Login",
+        "Logout": "Logout",
+        "adddoctor": "add doctor"
+    },
+    "header": {
+        "betterLife": "better life",
+        "and": "and",
+        "betterHealth": "better health",
+        "togetherFor": "Together for a",
+        "platformDescription": "Our platform is a reliable medical platform for online and offline medical consultations."
+    },
+    "ask": {
+        "slogan": "Our motto is Better Health, Better Life.",
+        "haveQuestion": "Do you have a medical question?",
+        "sendToDoctor": "Send your question to a specialist doctor.",
+        "yourQuestion": "Your question?",
+        "imageAlt": "Medical Question"
+    },
+    "services": {
+        "teethCleaning": "Teeth Cleaning",
+        "offers": "Available Offer",
+        "readMore": "Read More"
+    },
+    "currency": {
+        "EGP": "Egyptian Pound"
+    },
+    "book": {
+        "title": "Book a qualified and specialized doctor",
+        "teeth": "Teeth",
+        "child": "Child",
+        "skin": "Skin"
+    },
+    "features": {
+        "healthcareNeedsTitle": "All your healthcare needs",
+        "healthcareNeedsDescription": "Search and book a clinic visit, home visit, or a teleconsultation. Order your medicine and book a service or operation.",
+        "verifiedReviewsTitle": "Verified patient reviews",
+        "verifiedReviewsDescription": "Doctor ratings are from patients who booked and visited the doctor through our platform.",
+        "bookingConfirmedTitle": "Your booking is confirmed",
+        "bookingConfirmedDescription": "Your booking is automatically confirmed, as the doctor specifies his working hours and is notified of the booking details.",
+        "bookFreeTitle": "Book for free, and pay in the clinic",
+        "bookFreeDescription": "The consultation fees stated on our platform are the actual doctor's fees with no extra charges."
+    },
+    "text_login": {
+        "Login": "Login"
+    },
+    "errors": {
+        "loginFailed": "Email or password is incorrect"
+    },
+    "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email address",
+        "passwordRequired": "Password is required"
+    },
+    "placeholders": {
+        "email": "Email Address",
+        "password": "Password"
+    },
+    "buttons": {
+        "login": "Log in",
+        "forgetPassword": "Forget Password"
+    },
+    "re_text": {
+        "register": "Sign Up",
+        "fullName": "Full Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "dateOfBirth": "Date of Birth",
+        "gender": "Gender",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "male": "Male",
+        "female": "Female"
+    },
+    "re_errors": {
+        "emailInUse": "Email is already in use",
+        "passwordMismatch": "Passwords do not match",
+        "invalidPhone": "Invalid phone number",
+        "invalidDate": "Invalid date of birth",
+        "requiredField": "This field is required"
+    },
+    "re_validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email address",
+        "passwordRequired": "Password is required",
+        "confirmPasswordRequired": "Confirm password is required",
+        "phoneRequired": "Phone number is required",
+        "dateOfBirthRequired": "Date of birth is required",
+        "genderRequired": "Gender is required",
+        "specializationId": "specializationId"
+    },
+    "re_placeholders": {
+        "fullName": "Enter your full name",
+        "email": "Enter your email",
+        "phoneNumber": "Enter your phone number",
+        "dateOfBirth": "Select your date of birth",
+        "password": "Enter your password",
+        "confirmPassword": "Re-enter your password",
+        "specializationId": "specializationId"
+    },
+    "re_buttons": {
+        "register": "Sign Up",
+        "alreadyHaveAccount": "Already have an account? Log in"
+    },
+    "Genaral": {
+        "title": "Control Panel - Medical System",
+        "DoctorName": "Discover our amazing services and offers.",
+        "Specialty": "Specialty",
+        "Hospital/Clinic": "Hospital/Clinic",
+        "PhoneNumber": "Phone Number",
+        "TotalPatients": "Total Patients",
+        "TotalDoctors": "Total Doctors"
+    },
+    "sidbar":{
+        "genaral":"genaral",
+        "users":"users",
+        "doctors":"doctors",
+        "chats":"chats"
+      },
+    "Users":{
+      "DoctorName":"User's Name ",
+      "Phone Number":"Phone Number",
+      "Action":"Action",
+      "role":"role",
+      "msg1":"Unauthorized: Token is missing",
+      "msg2":"Failed to fetch users",
+      "msg3":"User Deleted Successfully!",
+      "msg4":"Failed to remove user",
+      "city": "The city",
+      "region": "region",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "Remove":" Remove",
+      "Userlist":"User list"
+
+    },
+    "Doctros": {
+        "adddoctor": "add doctor",
+        "addcity": "addcity",
+        "addFailed": "Incorrect email or password",
+        "emailRequired": "Email required",
+        "emailInvalid": "Invalid email",
+        "passwordRequired": "Password required",
+        "fullName": "fullName",
+        "email": "e-mail",
+        "gender": "Gender",
+        "phoneNumber": "Enter your phone number",
+        "specializationId": "specializationId",
+        "male": "Male",
+        "female": "Female",
+        "password": "password",
+        "confirmPassword": "confirmPassword",
+        "forgetPassword": "forgetPassword",
+        "city": "The city",
+        "region": "region",
+        "Doctor's Name": "Doctor's Name",
+        "Phone Number": "Phone Number",
+        "Action": "Action",
+        "msg1": "Unauthorized: Token is missing",
+        "msg2": "Failed to fetch doctors",
+        "msg3": "Doctor Deleted Successfully!",
+        "msg4": "Failed to remove doctor",
+        "Remove":" Remove",
+        "Userlist":"Userlist"
+
+        
+
+    },
+    "ProfileDoctor": {
+        "title": "Doctor Profile",
+        "fullName": "Full Name",
+        "email": "Email",
+        "phoneNumber": "Phone Number",
+        "dateOfBirth": "Date of Birth",
+        "gender": "Gender",
+        "selectGender": "Select your gender",
+        "male": "Male",
+        "female": "Female",
+        "city": "City",
+        "region": "Region",
+        "summary": "Summary",
+        "specialization": "Specialization",
+        "profilePicture": "Profile Picture",
+        "save": "Save",
+        "cancel": "Cancel",
+        "changePassword": "Change Password",
+        "uploadImage": "Upload Image",
+        "ProfileDoctor": "Profile Doctor",
+        "ChangeImage": "Change Image",
+        "UpdateDoctor": "Doctor's information",
+        "SelectCity": "Select City",
+        "Cancel": "Cancel",
+        "Save": "Save",
+        "Changepassword": "Change password",
+         "NewPassword":"New Password",
+          "ConfirmNewPassword":"Confirm New Password",
+          "SelectGender":"Select Gender",
+          "Myclinic":"add clinic",
+          "ShowMyclinic":"Show My clinic"
+
+
+    },
+    "messages": {
+        "profileUpdated": "Profile updated successfully!",
+        "profileUpdateFailed": "Failed to update profile"
+    },
+    "addcity": {
+        "required": "required",
+        "cityAdded": "add city",
+        "cityNamePlaceholder": "enter city",
+        "rigonyNamePlaceholder": "enter rigon"
+    },
+    "Myclinic":{
+        "title":"add Clinic",
+        "ClinicName":"Clinic Name",
+        "SelectRegion":"Select Region",
+        "SelectCity":"Select City",
+        "phoneNumber":"phone Number"
+    },
+    "showClinic":{
+        "title":""
+    }
+}

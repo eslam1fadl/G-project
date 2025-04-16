@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@200..1000&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+
+:root {
+  --main-color: #199ED3;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+  --font-family: 'Raleway', sans-serif;
+  --swiper-navigation-color: #199ED3 !important;
+
+}
+
+p {
+  font-family: "Tajawal", "Source Sans 3", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cairo", "Montserrat", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+
+/* language */
+
+.lang_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.lang {
+  border: 1px solid #199ED3 !important;
+  border-radius: 5px;
+
+}
+
+/* nav .p-3 {
+  padding: 0;
+} */
+
+.deactive {
+  display: none;
+}
+
+/* navbar */
+
+nav {
+  border: 1px solid #D1D5DB;
+  box-shadow: var(--shadow);
+  direction: ltr !important;
+}
+
+html[dir="rtl"] .slick-slide img {
+  transform: scaleX(-1);
+}
+
+.ltr {
+  direction: ltr;
+}
+
+
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+
+
+}
+
+.active {
+  position: relative;
+  display: inline-block;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #199ED3;
+}
+
+.container {
+  padding: 4rem;
+  margin: auto;
+}
+
+.tra {
+  border: none !important;
+  box-shadow: none !important;
+
+}
+
+
+.logo-text {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/* form */
+form input {
+  color: black !important;
+}
+
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.textarea:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+
+
+form {
+  border: 1px solid #F9FAFB;
+}
+
+.select-own {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 5px;
+}
+
+.select-own:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+option {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 5px;
+}
+
+.log-reg {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+
+}
+
+
+/* ------------------------------------------------------------------- */
+
+/* NavbarAdmin */
+.admin-nav {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+.logo-admin {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 15, 51, 1) 0%, rgba(2, 29, 66, 1) 0%, rgba(1, 72, 111, 1) 14%, rgba(1, 71, 110, 1) 30%, rgba(1, 97, 137, 1) 54%, rgba(1, 131, 172, 1) 74%, rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+/*  Sidebar */
+
+li a span {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 15, 51, 1) 0%, rgba(2, 29, 66, 1) 0%, rgba(1, 72, 111, 1) 0%, rgba(1, 71, 110, 1) 0%, rgba(1, 97, 137, 1) 39%, rgba(1, 131, 172, 1) 80%, rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+
+/* General */
+.general-page {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(6, 77, 108) 0%, rgb(3, 24, 80) 0%, rgb(9, 58, 128) 0%, rgba(1, 72, 111, 1) 0%, rgba(1, 71, 110, 1) 0%, rgba(1, 97, 137, 1) 39%, rgba(1, 131, 172, 1) 80%, rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c6d2e3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1F2937;
+}
+
+.name-doc {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-style: normal;
+}
+
+
+/* doctors */
+
+
+.title-doctor {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(2, 15, 51, 1) 0%, rgba(2, 29, 66, 1) 0%, rgba(1, 72, 111, 1) 14%, rgba(1, 71, 110, 1) 30%, rgba(1, 97, 137, 1) 54%, rgba(1, 131, 172, 1) 74%, rgba(0, 212, 255, 1) 100%);
+}
+
+.form-doctor,
+.form-doctor input,
+.form-doctor select,
+.form-doctor button {
+  color: #f0f3f2 !important;
+  background-color: #222 !important;
+  border-color: #f0f3f2 !important;
+}
+
+.form-doctor:focus {
+  background-color: #f0f3f2 !important;
+
+}
+
+input,
+select,
+textarea {
+  color: white !important;
+}
+
+input,
+select,
+textarea {
+  color: #cbd5e0 !important;
+}
+
+input::placeholder {
+  color: #718096 !important;
+}
+
+.form-city {
+  border: none !important;
+
+}
+
+.form-city input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/* -------------- users----------------- */
+
+.titleuser {
+  font-size: 28px !important;
+  font-weight: 800 !important;
+}
+
+.count {
+  font-size: 28px !important;
+  font-weight: 800 !important;
+}
+
+.clinic-title {
+  background: rgb(0, 208, 251);
+  background: linear-gradient(90deg, rgba(0, 208, 251, 1) 0%, rgba(88, 145, 91, 1) 100%);
+  font-size: 28;
+  font-weight: bold;
+}
+
+.clinic-btn {
+  background: rgb(0, 208, 251);
+  background: linear-gradient(90deg, rgba(0, 208, 251, 1) 0%, rgba(88, 145, 91, 1) 100%);
+  font-size: 28;
+  font-weight: bold;
+}
+.clinic-btn2{
+  background: rgb(0,208,251);
+background: linear-gradient(90deg, rgba(0,208,251,1) 0%, rgba(232,15,49,1) 86%);
+font-size: 28;
+font-weight: bold;
+}
