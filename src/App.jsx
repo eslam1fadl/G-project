@@ -6,7 +6,7 @@ import About from './Components/About';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import NotFound from './Components/NotFound';
-import Appointments from './Components/Appointments';
+import Schedule from './Components/Schedule';
 import ProfileUser from './Components/ProfileUser';
 import ProfileDoctor from './Components/ProfileDoctor';
 import ChangePassword from './Components/ChangePassword';
@@ -40,12 +40,11 @@ export default function App() {
         { path: 'register', element: <Register /> },
         { path: 'changepassword', element: <ChangePassword /> },
         { path: 'forgetpassword', element: <ForgetPassword /> },
-
         {
           element: <ProtectedRoute />, 
           children: [
             { path: 'about', element: <About /> },
-            { path: 'appointments', element: <Appointments /> },
+            { path: 'schedule', element: <Schedule /> },
             { path: 'profileDoctor', element: <ProfileDoctor /> },
             { path: 'profileUser', element: <ProfileUser /> },
             { path: 'contact', element: <Contact /> },

@@ -73,14 +73,14 @@ let [region, setRegion] = useState([]);
       setLoading(false);
       localStorage.setItem('clinicId',data.data.id);
       console.log(data.data.id)
-      toast.success("The clinic has been added successfully!", {
+      toast.success(`${t("addClinic.msg1")}`, {
         position: "top-center",
         autoClose: 3000,
       });
     } catch (error) {
       setLoading(false);
       console.error("API Error:", error.response?.data);
-      toast.error("Failed to add clinic", {
+      toast.error(`${t("addClinic.msg2")}`, {
         position: "top-center",
         autoClose: 3000,
       });
@@ -88,10 +88,10 @@ let [region, setRegion] = useState([]);
   }
 
   let validationSchema = Yup.object().shape({
-    clinicName: Yup.string().required("This field is required"),
-    phoneNumber: Yup.string().required("This field is required"),
-    city: Yup.string().required("This field is required"),
-    region: Yup.string().required("This field is required")
+    clinicName: Yup.string().required(t("re_validation.clinicName")),
+    phoneNumber: Yup.string().required(t("re_validation.emailRequired")),
+    city: Yup.string().required(t("re_validation.cityRequired")),
+    region: Yup.string().required(t("re_validation.regionRequired"))
   });
 
   let formik = useFormik({

@@ -1,10 +1,11 @@
-import React, { useEffect, useRef, useContext } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+
 import { useTranslation } from "react-i18next";
-import { TranslateContext } from "../utils/TranslateContext";
 import img0 from '../assets/images/header.jpg';
 import img1 from '../assets/images/header1.jpg';
 import img2 from '../assets/images/header2.jpg';
@@ -13,19 +14,6 @@ import img4 from '../assets/images/header4.jpg';
 
 export default function Header() {
   const { t } = useTranslation("global");
-
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    fade: true,
-    responsive: [{ breakpoint: 768, settings: { dots: false } }]
-  };
 
   const typedRef = useRef(null);
 
@@ -41,16 +29,50 @@ export default function Header() {
   }, [t]);
 
   return (
-    <section className="relative h-screen w-full">
-      <div className="absolute inset-0 -z-10">
-        <Slider {...settings} className="relative h-full">
-          <div className="h-screen"><img src={img0} className="w-full h-full object-cover" alt="Header 0" /></div>
-          <div className="h-screen"><img src={img1} className="w-full h-full object-cover" alt="Header 1" /></div>
-          <div className="h-screen"><img src={img2} className="w-full h-full object-cover" alt="Header 2" /></div>
-          <div className="h-screen"><img src={img3} className="w-full h-full object-cover" alt="Header 3" /></div>
-          <div className="h-screen"><img src={img4} className="w-full h-full object-cover" alt="Header 4" /></div>
-        </Slider>
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}></div>
+    <section className="relative h-screen w-full" >
+      <div className="absolute inset-0 -z-10" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+        <Swiper
+          modules={[EffectFade, Autoplay]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
+          autoplay={{ delay: 3000 }}
+          speed={2000}
+          loop={true}
+          dir="rtl"
+          className="relative h-full"
+        >
+        
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img src={img0} className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out" alt="Header 0" />
+              <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img src={img1} className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out" alt="Header 1" />
+              <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img src={img2} className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out" alt="Header 2" />
+              <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img src={img3} className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out" alt="Header 3" />
+              <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}></div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="relative h-screen">
+              <img src={img4} className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out" alt="Header 4" />
+              <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}></div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">

@@ -29,11 +29,11 @@ export default function Book() {
       {t("book.title")}
       </h1>
       
-<div className='mt-5'>
+<div className='mt-5 w-full'>
       <Swiper 
   navigation={true} 
   modules={[Navigation]} 
-  slidesPerView="auto" 
+  slidesPerView={3} 
   spaceBetween={20} 
   className="mySwiper"
 >

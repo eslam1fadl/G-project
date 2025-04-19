@@ -1,10 +1,13 @@
 
   import React, { useState } from 'react'
-  
+  import { useTranslation } from "react-i18next";
+  import { ToastContainer, toast } from "react-toastify";
+
   export default function Contact() {
 
     const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
+      const { t } = useTranslation("global");
 
   const validate = () => {
     let newErrors = {};
@@ -39,10 +42,10 @@
         <div className='container'>
  <section className="p-6 mt-20 bg-white shadow-2xl shadow-gray-300  max-w-5xl mx-auto flex flex-col md:flex-row gap-6">
         <div className="w-full md:w-1/2">
-          <h2 className="text-xl font-bold mb-4 text-[#199ED3]">Contact Us</h2>
-          <p className="mb-2 text-[#666666]">Phone: +20 259 83 999</p>
-          <p className="mb-2 text-[#666666]">Address: Cairo, Egypt</p>
-          <p className='mb-2 text-[#666666]'>Email: customercare@drhome.com</p>
+          <h2 className="text-xl font-bold mb-4 text-[#199ED3]">{t("contact.ContactUs")}</h2>
+          <p className="mb-2 text-[#666666]">{t("contact.Phone")}: +20 259 83 999</p>
+          <p className="mb-2 text-[#666666]">{t("contact.Address")}: Cairo, Egypt</p>
+          <p className='mb-2 text-[#666666]'>{t("contact.Email")}: customercare@drhome.com</p>
         </div>
 
         <form onSubmit={handleSubmit} className="w-full md:w-1/2 grid gap-4">

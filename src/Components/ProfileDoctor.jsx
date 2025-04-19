@@ -68,22 +68,22 @@ let [region, setRegion] = useState([]);
   }
 
   const ValidationSchema = Yup.object().shape({
-    fullName: Yup.string().required("Full Name is required"),
+    fullName: Yup.string().required(t("re_validation.fullName")),
     email: Yup.string()
-      .email("Email not valid")
-      .matches(/\.com$/, "Email must contain '.com'")
-      .required("Email is required"),
+    .email(t("re_validation.emailInvalid"))
+    .matches(/\.com$/, t("re_validation.com"))
+      .required(t("re_validation.emailRequired")),
     phoneNumber: Yup.string()
-      .matches(/^(01)[0-25][0-9]{8}$/, "Invalid phone number")
-      .required("Phone number is required"),
+    .required(t("re_validation.phoneRequired"))
+    .matches(/^(01)[0-25][0-9]{8}$/, t("re_errors.invalidPhone")),
     dateOfBirth: Yup.date()
-      .max(new Date(), "Invalid date of birth")
+      .max(new Date(), "re_validation.date")
       .nullable(),
-    gender: Yup.string().required("Gender is required"),
-    city: Yup.string().required("City is required"),
-    region: Yup.string().required("Region is required"),
+    gender: Yup.string().required(t("re_validation.genderRequired")),
+     city: Yup.string().required(t("re_validation.cityRequired")),
+        region: Yup.string().required(t("re_validation.regionRequired")),
     summary: Yup.string().nullable(),
-    specialization: Yup.string().required("Specialization is required"),
+    specialization: Yup.string()
   });
 
   const formik = useFormik({
@@ -104,12 +104,10 @@ let [region, setRegion] = useState([]);
         setProfileLoading(true);
 
         const formData = new FormData();
-        // Add all profile fields to formData
         for (const key in values) {
           formData.append(key, values[key]);
         }
 
-        // Add the doctor ID
         formData.append("doctorId", isDoctorId || id);
 
         console.log("Submitting form values:", values);
@@ -121,7 +119,7 @@ let [region, setRegion] = useState([]);
           },
         });
 
-        toast.success("Profile updated successfully!", {
+        toast.success(`${t("ProfileDoctor.msg1")}`, {
           position: "top-center",
           autoClose: 3000,
           hideProgressBar: false,
@@ -137,7 +135,7 @@ let [region, setRegion] = useState([]);
       } catch (error) {
         console.error("Full error details:", error);
         const errorMessage = error.response?.data?.message
-          || error.response?.data?.errors || "Failed to update profile data";
+          || error.response?.data?.errors || `${t("ProfileDoctor.msg2")}`;
 
         toast.error(errorMessage, {
           position: "top-center",
@@ -191,7 +189,7 @@ let [region, setRegion] = useState([]);
       }
     } catch (error) {
       console.error("Error fetching profile:", error);
-      setMsg("Failed to fetch profile data");
+      setMsg(`${t("ProfileDoctor.msg3")}`);
     } finally {
       setProfileLoading(false);
     }
@@ -220,7 +218,7 @@ let [region, setRegion] = useState([]);
         setImageUrl(profilePicUrl);
         localStorage.setItem("doctorProfileImageUrl", profilePicUrl);
 
-        toast.success("Profile picture updated successfully!", {
+        toast.success(`${t("ProfileDoctor.msg4")}`, {
           position: "top-center",
           autoClose: 3000,
         });
@@ -230,7 +228,7 @@ let [region, setRegion] = useState([]);
       return response.data;
     } catch (error) {
       console.error('Error updating picture:', error.response?.data || error.message);
-      toast.error("Failed to update profile picture", {
+      toast.error(`${t("ProfileDoctor.msg5")}`, {
         position: "top-center",
         autoClose: 3000,
       });
@@ -350,7 +348,7 @@ let [region, setRegion] = useState([]);
                 value={formik.values.fullName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                placeholder="Full Name"
+                placeholder={t("re_placeholders.fullName")}
                 className="block py-2 px-3 w-full text-sm text-gray-700 bg-transparent border-2 border-gray-300 rounded-md focus:ring-2 focus:ring-[#199ED3] focus:outline-none"
               />
               {formik.touched.fullName && formik.errors.fullName && (
@@ -418,7 +416,7 @@ let [region, setRegion] = useState([]);
                   onBlur={formik.handleBlur}
                   className="block py-2 px-3 w-full text-sm text-gray-700 bg-transparent border-2 border-gray-300 rounded-md focus:ring-2 focus:ring-[#199ED3] focus:outline-none"
                 >
-                  <option value="">Select Region</option>
+                  <option value="">{t("Myclinic.SelectRegion")}</option>
                   {region.map(region => <option key={region.id} value={region.name}>{region.name}</option>)}
 
                 </select>

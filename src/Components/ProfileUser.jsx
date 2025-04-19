@@ -54,19 +54,20 @@ async function getregion() {
   
 }
   const ValidationSchema = Yup.object().shape({
-    fullName: Yup.string().required("This field is required"),
-    email: Yup.string()
-      .required("Email is required")
-      .email("Email not valid")
-      .matches(/\.com$/, "Email must contain '.com'"),
-    phoneNumber: Yup.string()
-      .required("Phone number is required")
-      .matches(/^(01)[0-25][0-9]{8}$/, "Invalid phone number"),
-    dateOfBirth: Yup.date()
-      .required("Date of birth is required")
-      .max(new Date(), "Invalid date of birth"),
-    gender: Yup.string().required("Gender is required"),
-    city: Yup.string().required("City is required"),
+    fullName: Yup.string().required(t("re_validation.fullName")),
+       email: Yup.string()
+       .email(t("re_validation.emailInvalid"))
+       .matches(/\.com$/, t("re_validation.com"))
+         .required(t("re_validation.emailRequired")),
+       phoneNumber: Yup.string()
+       .required(t("re_validation.phoneRequired"))
+       .matches(/^(01)[0-25][0-9]{8}$/, t("re_errors.invalidPhone")),
+       dateOfBirth: Yup.date()
+         .max(new Date(), "re_validation.date")
+         .nullable(),
+       gender: Yup.string().required(t("re_validation.genderRequired")),
+        city: Yup.string().required(t("re_validation.cityRequired")),
+          //  region: Yup.string().required(t("re_validation.regionRequired")),
   });
 
   const formik = useFormik({
@@ -191,7 +192,7 @@ async function getregion() {
               value={formik.values.fullName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              placeholder="Full Name"
+              placeholder={t("re_placeholders.fullName")}
               className="block py-2 px-3 w-full text-sm text-gray-700 bg-transparent border-2 border-gray-300 rounded-md focus:ring-2 focus:ring-[#199ED3] focus:outline-none"
             />
             {formik.touched.fullName && formik.errors.fullName && (
@@ -207,7 +208,7 @@ async function getregion() {
               value={formik.values.email}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              placeholder="Email"
+              placeholder={t("re_placeholders.email")}
               className="block py-2 px-3 w-full text-sm text-gray-700 bg-transparent border-2 border-gray-300 rounded-md focus:ring-2 focus:ring-[#199ED3] focus:outline-none"
             />
             {formik.touched.email && formik.errors.email && (
@@ -223,7 +224,7 @@ async function getregion() {
               value={formik.values.phoneNumber}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              placeholder="Phone Number"
+              placeholder={t("re_placeholders.phoneNumber")}
               className="block py-2 px-3 w-full text-sm text-gray-700 bg-transparent border-2 border-gray-300 rounded-md focus:ring-2 focus:ring-[#199ED3] focus:outline-none"
             />
             {formik.touched.phoneNumber && formik.errors.phoneNumber && (
@@ -276,7 +277,7 @@ async function getregion() {
               onBlur={formik.handleBlur}
               className="block py-2 px-3 w-full text-sm text-gray-700 bg-transparent border-2 border-gray-300 rounded-md focus:ring-2 focus:ring-[#199ED3] focus:outline-none"
             >
-              <option value="">Choose the city</option>
+              <option value="">{t("ProfileDoctor.SelectCity")}</option>
               {city.map(city => <option key={city.id} value={city.name}>{city.name}</option>)}
 
             </select>
@@ -294,7 +295,7 @@ async function getregion() {
               {profileLoading ? (
                 <i className="fa-solid fa-rotate-right animate-spin text-white"></i>
               ) : (
-                "Save"
+                 `${t("ProfileDoctor.Save")}`
               )}
             </button>
             <button
@@ -302,7 +303,7 @@ async function getregion() {
               onClick={() => navigate("/")}
               className="flex justify-center items-center text-lg font-medium text-black bg-gray-200 hover:bg-gray-300 focus:ring-4 rounded-lg w-[40%] py-1"
             >
-              Cancel
+              {t("ProfileDoctor.Cancel")}
             </button>
           </div>
         </form>
@@ -315,7 +316,7 @@ async function getregion() {
           disabled={changePasswordLoading}
           className="flex justify-center items-center mx-auto mt-5 max-w-md text-lg py-1 text-white bg-[#087fae] hover:bg-[#056789] focus:ring-4 rounded-lg w-full"
         >
-          {changePasswordLoading ? <i className="fa-solid fa-rotate-right animate-spin text-white"></i> : "Change password"}
+          {changePasswordLoading ? <i className="fa-solid fa-rotate-right animate-spin text-white"></i> :  `${t("ProfileDoctor.Changepassword")}`}
         </button>
       </div>
     </div>

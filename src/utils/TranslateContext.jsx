@@ -11,7 +11,7 @@ export function TranslateProvider({ children }) {
     function handleChanglan(lang) {
         i18n.changeLanguage(lang); 
         setArlang(lang === "ar"); 
-        // document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+        document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
     }
     
 

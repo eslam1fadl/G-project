@@ -61,10 +61,10 @@ nav {
   box-shadow: var(--shadow);
   direction: ltr !important;
 }
-
-html[dir="rtl"] .slick-slide img {
-  transform: scaleX(-1);
+nav {
+  font-family: 'Raleway', sans-serif; 
 }
+
 
 .ltr {
   direction: ltr;

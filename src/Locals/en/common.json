@@ -88,12 +88,17 @@
     "re_validation": {
         "emailRequired": "Email is required",
         "emailInvalid": "Invalid email address",
+        "com": "Email must contain '.com'",
         "passwordRequired": "Password is required",
         "confirmPasswordRequired": "Confirm password is required",
         "phoneRequired": "Phone number is required",
         "dateOfBirthRequired": "Date of birth is required",
         "genderRequired": "Gender is required",
-        "specializationId": "specializationId"
+        "cityRequired": "city Required",
+        "regionRequired": "region Required",
+        "specializationId": "specializationId required",
+        "clinicName": "clinic Name required",
+        "date": "Invalid date of birth"
     },
     "re_placeholders": {
         "fullName": "Enter your full name",
@@ -117,29 +122,38 @@
         "TotalPatients": "Total Patients",
         "TotalDoctors": "Total Doctors"
     },
-    "sidbar":{
-        "genaral":"genaral",
-        "users":"users",
-        "doctors":"doctors",
-        "chats":"chats"
-      },
-    "Users":{
-      "DoctorName":"User's Name ",
-      "Phone Number":"Phone Number",
-      "Action":"Action",
-      "role":"role",
-      "msg1":"Unauthorized: Token is missing",
-      "msg2":"Failed to fetch users",
-      "msg3":"User Deleted Successfully!",
-      "msg4":"Failed to remove user",
-      "city": "The city",
-      "region": "region",
-      "gender": "Gender",
-      "male": "Male",
-      "female": "Female",
-      "Remove":" Remove",
-      "Userlist":"User list"
-
+    "sidbar": {
+        "genaral": "genaral",
+        "users": "users",
+        "doctors": "doctors",
+        "chats": "chats"
+    },
+    "NavbrAdmin": {
+        "General": "General",
+        "Doctors": "Doctors",
+        "users": "users",
+        "Chats": "Chats"
+    },
+    "Users": {
+        "DoctorName": "User's Name ",
+        "Phone Number": "Phone Number",
+        "Action": "Action",
+        "role": "role",
+        "msg1": "Unauthorized: Token is missing",
+        "msg2": "Failed to fetch users",
+        "msg3": "User Deleted Successfully!",
+        "msg4": "Failed to remove user",
+        "city": "The city",
+        "region": "region",
+        "gender": "Gender",
+        "male": "Male",
+        "female": "Female",
+        "Remove": " Remove",
+        "Userlist": "User list"
+    },
+    "changPassword": {
+        "msg1": "Password updated successfully",
+        "msg2": "Failed to update password"
     },
     "Doctros": {
         "adddoctor": "add doctor",
@@ -167,11 +181,10 @@
         "msg2": "Failed to fetch doctors",
         "msg3": "Doctor Deleted Successfully!",
         "msg4": "Failed to remove doctor",
-        "Remove":" Remove",
-        "Userlist":"Userlist"
-
-        
-
+        "msg5": "The Doctor Added Successfully",
+        "msg6": "Something went wrong",
+        "Remove": " Remove",
+        "Userlist": "Userlist"
     },
     "ProfileDoctor": {
         "title": "Doctor Profile",
@@ -199,13 +212,16 @@
         "Cancel": "Cancel",
         "Save": "Save",
         "Changepassword": "Change password",
-         "NewPassword":"New Password",
-          "ConfirmNewPassword":"Confirm New Password",
-          "SelectGender":"Select Gender",
-          "Myclinic":"add clinic",
-          "ShowMyclinic":"Show My clinic"
-
-
+        "NewPassword": "New Password",
+        "ConfirmNewPassword": "Confirm New Password",
+        "SelectGender": "Select Gender",
+        "Myclinic": "add clinic",
+        "ShowMyclinic": "Show My clinic",
+        "msg1": "Profile updated successfully!",
+        "msg2": "Failed to update profile data",
+        "msg3": "Failed to fetch profile data",
+        "msg4": "Profile picture updated successfully!",
+        "msg5": "Failed to update profile picture"
     },
     "messages": {
         "profileUpdated": "Profile updated successfully!",
@@ -217,14 +233,47 @@
         "cityNamePlaceholder": "enter city",
         "rigonyNamePlaceholder": "enter rigon"
     },
-    "Myclinic":{
-        "title":"add Clinic",
-        "ClinicName":"Clinic Name",
-        "SelectRegion":"Select Region",
-        "SelectCity":"Select City",
-        "phoneNumber":"phone Number"
+    "addClinic": {
+        "msg1": "The clinic has been added successfully!",
+        "msg2": "Failed to add clinic",
+        "SelectRegion": "Select Region"
     },
-    "showClinic":{
-        "title":""
+    "Myclinic": {
+        "title": "add Clinic",
+        "ClinicName": "Clinic Name",
+        "SelectRegion": "Select Region",
+        "SelectCity": "Select City",
+        "phoneNumber": "phone Number"
+    },
+    "showClinic": {
+        "title": "This is your clinic's data on patients suffering from it.",
+        "Governorate": "Governorate",
+        "Thearea": "The area",
+        "phonenumber": "phone number",
+        "update": "update",
+        "Add_an_appointment": "Add appointment"
+    },
+    "appointments": {
+        "title": "Add schedule",
+        "workDay": "workDay",
+        "startTime": "startTime",
+        "endTime": "endTime",
+        "appointmentDurationInMinutes": "appointment Dur In Min",
+        "fee": "fee",
+        "save": "save",
+        "msg1": "Appointments added successfully",
+        "msg2": "Failed to add appointments",
+        "msg3": "There is no conflict in waiting times, please choose the last time.",
+        "required": "This field is required",
+        "date": "Today's date or the next few days are acceptable",
+        "dur": "The duration must be at least 5 minutes",
+        "feeval": "The examination fee cannot be less than"
+    },
+    "contact": {
+        "ContactUs": "Contact Us",
+        "Phone": "Phone",
+        "Address": "Address",
+        "Email": "Email",
+        "Send": "Send"
     }
 }

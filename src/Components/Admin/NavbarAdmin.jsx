@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function NavbarAdmin() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation("global");
 
   return (
     <nav className="admin-nav fixed  w-full top-0 right-0 z-50 bg-gray-800 text-white border-0 border-none shadow-none shadow-0">
@@ -34,16 +35,16 @@ export default function NavbarAdmin() {
           <div className="md:hidden mt-3 w-full">
             <ul className="flex flex-col space-y-2 py-2 px-4 bg-gray-700 rounded-lg">
               <li>
-                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={''}>General</Link>
+                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={''}>{t("NavbrAdmin.General")}</Link>
               </li>
               <li>
-                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={'doctors'}>Doctors</Link>
+                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={'doctors'}>{t("NavbrAdmin.Doctors")}</Link>
               </li>
               <li>
-                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={'Patients'}>Patients</Link>
+                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={'Patients'}>{t("NavbrAdmin.users")}</Link>
               </li>
               <li>
-                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={'chats'}>Chats</Link>
+                <Link className="block py-2 text-lg font-semibold text-white hover:bg-gray-600 rounded px-2" to={'chats'}>{t("NavbrAdmin.Chats")}</Link>
               </li>
             </ul>
           </div>

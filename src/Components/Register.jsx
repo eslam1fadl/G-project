@@ -48,7 +48,8 @@ export default function Register() {
 
   let ValidationSchema = Yup.object().shape({
     fullName: Yup.string().required(t("re_errors.requiredField")),
-    email: Yup.string().required(t("re_validation.emailRequired")).email(t("re_validation.emailInvalid")).matches(/\.com$/, "Email must contain '.com'"),
+    email: Yup.string().required(t("re_validation.emailRequired")).email(t("re_validation.emailInvalid"))
+    .matches(/\.com$/, t("re_validation.com")),
     phoneNumber: Yup.string().required(t("re_validation.phoneRequired")).matches(/^(01)[0-25][0-9]{8}$/, t("re_errors.invalidPhone")),
     dateOfBirth: Yup.date().required(t("re_validation.dateOfBirthRequired")).max(new Date(), t("re_errors.invalidDate")),
     gender: Yup.string().required(t("re_validation.genderRequired")),
@@ -81,7 +82,7 @@ export default function Register() {
     return <Loading />;
   }
   return (
-    <div className="container">
+    <div className="container md:p-16 p-4">
       <Helmet>
         <title>{t("text.Register")}</title>
       </Helmet>
@@ -96,7 +97,7 @@ export default function Register() {
         </div>
       )}
 
-      <div className="flex justify-center items-center mt-20">
+      <div className="flex justify-center items-center mt-10">
         <h2 className="log-reg text-xl text-center font-bold text-white py-1.5 w-full max-w-md bg-[#199ED3]">
           {t("re_text.register")}
         </h2>

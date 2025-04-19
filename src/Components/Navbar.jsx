@@ -75,29 +75,29 @@ export default function Navbar() {
               <>
                 {console.log("Rendering navbar with role:", isRole)}
                 {isRole === 'Patient' ? (
-                  <li><NavLink to="/profileUser" className="block py-2">{isUser ? isUser : "User"}</NavLink></li>
+                  <li><NavLink to="/profileUser" className="block py-2 font-normal ">{isUser ? isUser : "User"}</NavLink></li>
                 ) : isRole === 'Doctor' ? (
-                  <li><NavLink to="/ProfileDoctor" className="block py-2">{isUser ? isUser : "Doctor"}</NavLink></li>
+                  <li><NavLink to="/ProfileDoctor" className="block py-2 font-normal">{isUser ? isUser : "Doctor"}</NavLink></li>
                 ) : (
-                  <li><NavLink to="/admin" className="block py-2">{t("text.AdminLayout")}</NavLink></li>
+                  <li><NavLink to="/admin" className="block py-2 font-normal">{t("text.AdminLayout")}</NavLink></li>
                 )}
               </>
             )}
 
-            <li><NavLink to="/" className="block py-2 "> {t("text.Home")}</NavLink></li>
+            <li><NavLink to="/" className="block py-2 font-normal "> {t("text.Home")}</NavLink></li>
             {isLogin && (
               <>
-                <li><NavLink to="/about" className="block py-2 "> {t("text.About")} </NavLink></li>
-                <li><NavLink to="/contact" className="block py-2 ">{t("text.Contact")}</NavLink></li>
+                <li><NavLink to="/about" className="block py-2 font-normal "> {t("text.About")} </NavLink></li>
+                <li><NavLink to="/contact" className="block py-2 font-normal ">{t("text.Contact")}</NavLink></li>
               </>
             )}
 
             {isLogin ? (
-              <li><span onClick={logout} className="block py-2  cursor-pointer">{t("text.Logout")}</span></li>
+              <li><span onClick={logout} className="block py-2 font-normal  cursor-pointer">{t("text.Logout")}</span></li>
             ) : (
               <>
-                <li><NavLink to="/register" className="block py-2 ">{t("text.Register")}</NavLink></li>
-                <li><NavLink to="/login" className="block py-2 ">{t("text.Login")}</NavLink></li>
+                <li><NavLink to="/register" className="block py-2 font-normal ">{t("text.Register")}</NavLink></li>
+                <li><NavLink to="/login" className="block py-2 font-normal ">{t("text.Login")}</NavLink></li>
               </>
             )}
 

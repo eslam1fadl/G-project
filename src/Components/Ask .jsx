@@ -22,40 +22,7 @@ export default function Ask() {
         {t("ask.slogan")}
       </h1>
 
-      <div className="ask bg-gray-50 text-gray-600 rounded-2xl flex flex-col lg:flex-row items-center h-auto lg:h-[280px] lg:p-10 gap-6 my-20">
-        {/* {(language == 'en'?
-        <div className="w-full lg:w-1/2 text-center lg:text-left my-5">
-          <h1 className="text-2xl font-semibold"> {t("ask.haveQuestion")}</h1>
-          <p className="mt-2 text-lg">{t("ask.sendToDoctor")}</p>
-          <button className="mt-4 bg-blue-500 hover:bg-blue-600 transition px-5 py-2 w-[94%] lg:w-[30%] text-white rounded-xl shadow-md">
-        {t("ask.yourQuestion")}
-          </button>
-        </div>:
-        <div className="w-full lg:w-1/2 text-center lg:text-right my-5">
-        <h1 className="text-2xl font-semibold"> {t("ask.haveQuestion")}</h1>
-        <p className="mt-2 text-lg">{t("ask.sendToDoctor")}</p>
-        <button className="mt-4 bg-blue-500 hover:bg-blue-600 transition px-5 py-2 w-[94%] lg:w-[30%] text-white rounded-xl shadow-md">
-      {t("ask.yourQuestion")}
-        </button>
-      </div>
-      
-      )} */}
-      <div className="w-full lg:w-1/2 text-center lg:text-left my-5">
-          <h1 className="text-2xl font-semibold"> {t("ask.haveQuestion")}</h1>
-          <p className="mt-2 text-lg">{t("ask.sendToDoctor")}</p>
-          <button className="mt-4 bg-blue-500 hover:bg-blue-600 transition px-5 py-2 w-[94%] lg:w-[30%] text-white rounded-xl shadow-md">
-        {t("ask.yourQuestion")}
-          </button>
-        </div>
-
-        <div className="w-full lg:w-1/2">
-          <img
-            src={ask}
-            className="w-full h-[100%] lg:h-[280px] object-cover ml-0 lg:ml-10 rounded-xl"
-            alt="Medical Question"
-          />
-        </div>
-      </div>
+     
 <div className='my-30'>
       <Swiper 
   navigation={true} 

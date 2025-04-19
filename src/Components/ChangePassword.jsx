@@ -43,9 +43,9 @@ export default function ChangePassword() {
             Authorization: `Bearer ${token}`,
           },
         });
-        setMsg("Password updated successfully");
+        setMsg(`${t("changPassword.msg1")}`);
       } catch (error) {
-        setMsg("Failed to update password");
+        setMsg(`${t("changPassword.msg2")}`);
       } finally {
         setLoading(false);
       }

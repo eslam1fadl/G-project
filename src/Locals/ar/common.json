@@ -88,12 +88,18 @@
     "re_validation": {
         "emailRequired": "البريد الإلكتروني مطلوب",
         "emailInvalid": "البريد الإلكتروني غير صالح",
+        "com":" يجب ان تحتوي علي دوت كوم",
         "passwordRequired": "كلمة المرور مطلوبة",
         "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
         "phoneRequired": "رقم الهاتف مطلوب",
         "dateOfBirthRequired": "تاريخ الميلاد مطلوب",
         "genderRequired": "الجنس مطلوب",
-        "specializationId":"معرف التخصص"
+        "cityRequired":"المدينه مطلوبه",
+        "regionRequired":"المنطقه مطلوبه",
+        "specializationId":" معرف التخصص مطلوب" ,
+        "clinicName":"اسم العياده مطلوب",
+        "date":"تاريخ الميلاد غير صالح"
+
         
     },
     "re_placeholders": {
@@ -153,11 +159,24 @@
         "msg2":"فشل في جلب الأطباء",
         "msg3":"تم حذف الطبيب بنجاح!",
         "msg4":"فشل في إزالة الطبيب",
+        "msg5":"تم اضافه الطبيب بنجاح",
+        "msg6":"حدث خطاء ما ",
         "Remove":" حزف",
         "Userlist":"قائمه الاطباء"
 
 
 
+    },
+    "NavbrAdmin":{
+        "General":"عام",
+        "Doctors":"اطباء",
+        "users":"مستخدمين",
+        "Chats":"محادثات"
+
+      },
+      "changPassword":{
+        "msg1":"تعديل الباسورد بنجاح",
+        "msg2":"فشل تعديل الباسورد"  
     },
     "Users":{
       "DoctorName":"اسم المستخدم",
@@ -210,7 +229,14 @@
           "Myclinic":"اضافه عيادة",
           "ShowMyclinic":"عيادتي",
 
-          "Myappointments":"مواعيدي"
+          "Myappointments":"مواعيدي",
+          "msg1":"تم تعديل البروفايل بنجاح",
+          "msg2":"فشل في تعديل البروفايل",
+          "msg3":"فشل في جلب بيانات الملف الشخصي",
+          "msg4":"تم تحديث الصورة الشخصية بنجاح!",
+          "msg5":"فشل في تحديث صورة الملف الشخصي"
+
+
         },
         "validation1": {
           "required": "هذا الحقل مطلوب",
@@ -229,11 +255,47 @@
           "rigonyNamePlaceholder":"ادخل اسم المنطقه"
 
         },
+        "addClinic":{
+          "msg1":"The clinic has been added successfully!",
+          "msg2":"Failed to add clinic"
+      },
         "Myclinic":{
           "title":"اضافه العياده",
           "ClinicName":"اسم العياده",
           "SelectRegion":"اختيار المنطقه",
           "SelectCity":"اختيار المدينه",
           "phoneNumber":"رقم الهاتف"
-      }
+      },
+      "showClinic":{
+        "title":".وهذه بيانات عيادتكم عن المرضى الذين يعانون من هذه الحالة" ,
+        "Governorate":"المحافظه",
+        "Thearea":"المنطقه",
+        "phonenumber":"رقم الهاتف",
+        "update":"تعديل",
+        "Add_an_appointment":"اضافة معاد"
+    },
+    "schedule":{
+      "title":"اضافه جدول مواعيد",
+      "workDay":"يوم العمل",
+      "startTime":"بدايه الوقت",
+      "endTime":"نهايه الوقت",
+      "appointmentDurationInMinutes":"مدة الكشف",
+      "fee":"السعر",
+      "save":"حفظ",
+       "msg1":"تمت إضافة المواعيد بنجاح",
+        "msg2":"فشل في إضافة المواعيد",
+        "msg3":"يوجد تعارض في مواعيد الحجز، من فضلك اختر وقتًا اخر",
+        "required":"هذا الحقل مطلوب",
+        "date":"تاريخ اليوم أو الايام القادمه مسموح به",
+        "dur":"المدة يجب أن تكون 5 دقائق على الاقل",
+        "feeval":"سعر الكشف لا يمكن أن يكون أقل من "
+
+  },
+      "contact":{
+        "ContactUs":"اتصل بنا",
+        "Phone":"الهاتف",
+        "Address":"العنون",
+        "Email":"الايميل",
+        "Send":"ارسال"
+    }
 }

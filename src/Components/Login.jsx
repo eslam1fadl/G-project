@@ -73,7 +73,7 @@ export default function Login() {
         return <Loading />;
       }
     return (
-        <div className="container">
+        <div className="container md:p-16 p-4">
             <Helmet>
                 <title>{t("text.Login")}</title>
             </Helmet>

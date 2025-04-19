@@ -83,12 +83,12 @@ let [region, setRegion] = useState([]);
         }
       );
       if (response.data.message.message === "The Doctor Added Successfully") {
-        toast.success("The Doctor Added Successfully", { position: "top-center" });
+        toast.success(`${t("Doctros.msg5")}`, { position: "top-center" });
       }
 
       setLoading(false);
     } catch (error) {
-      toast.error("Something went wrong", { position: "top-center" });
+      toast.error(`${t("Doctros.msg5")}`, { position: "top-center" });
       setLoading(false);
     }
   };
@@ -99,7 +99,7 @@ let [region, setRegion] = useState([]);
     email: Yup.string()
       .required(t("re_validation.emailRequired"))
       .email(t("re_validation.emailInvalid"))
-      .matches(/\.com$/, "Email must contain '.com'"),
+      .matches(/\.com$/, t("re_validation.com")),
     phoneNumber: Yup.string()
       .required(t("re_validation.phoneRequired"))
       .matches(/^(01)[0-25][0-9]{8}$/, t("re_errors.invalidPhone")),
